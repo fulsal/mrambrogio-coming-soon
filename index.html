@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Mr. Ambrogio — Your City Concierge</title>
+  <meta name="description" content="Mr. Ambrogio — Your City Concierge. An emotional way to visit Italy. Coming soon." />
+  <meta name="theme-color" content="#f7f2e9" />
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #f7f2e9; }
+    body { min-height: 100svh; overflow: hidden; }
+    .hero { position: fixed; inset: 0; }
+    picture, img { display: block; width: 100%; height: 100%; }
+    img { object-fit: cover; object-position: center center; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    @media (max-width: 700px), (orientation: portrait) {
+      img { object-position: center center; }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero" aria-labelledby="brand-title">
+    <picture>
+      <source media="(max-width: 700px), (orientation: portrait)" srcset="hero-mobile.webp" />
+      <img src="hero-desktop.webp" alt="Mr. Ambrogio — Your City Concierge. An emotional way to visit Italy. Coming soon." fetchpriority="high" />
+    </picture>
+    <div class="sr-only">
+      <h1 id="brand-title">Mr. Ambrogio — Your City Concierge</h1>
+      <p>An emotional way to visit Italy.</p>
+      <p>Coming soon.</p>
+    </div>
+  </main>
+</body>
+</html>
